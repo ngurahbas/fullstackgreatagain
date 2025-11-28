@@ -4,6 +4,10 @@
 - Software Engineer
 - Strength Training
 - Philosophy (Metaphysics)
+## Inspiration
+- DHH's post "Merchant of Complexity"
+- HTMX memes
+- Personal discomfort with the current state of web development
 ## History
 - Single pages with links
 - Forms for data input
