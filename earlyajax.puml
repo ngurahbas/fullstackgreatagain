@@ -1,0 +1,37 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+title Early Ajax
+skinparam ParticipantPadding 200
+
+actor User as u
+participant Browser as b
+participant Host as h
+
+group 1. Enter Url
+u->b:enter url
+b->h:HTTP request
+b<--h:Full HTML
+b->b:render Full HTML
+activate b
+end
+
+group 2. Interaction
+u->b:user interaction
+b->h:XML HTTP request
+b<--h:HTML/JSON
+b->b:DOM manipulation
+activate b
+end
+deactivate b
+
+group 3. Interaction
+u->b:user interaction
+b->h:XML HTTP request
+b<--h:HTML/JSON
+b->b:DOM manipulation
+activate b
+end
+deactivate b
+deactivate b
+
+@enduml
