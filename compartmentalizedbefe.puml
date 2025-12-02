@@ -1,6 +1,6 @@
 @startuml
 'https://plantuml.com/sequence-diagram
-title Early Ajax
+title Compartmentalized Backend and Frontend
 skinparam ParticipantPadding 200
 
 actor User as u
@@ -10,8 +10,12 @@ participant Host as h
 group 1. Enter Url
 u->b:enter url
 b->h:HTTP request
-b<--h:Full HTML
-b->b:render Full HTML
+b<--h:HTML with link jsbundle
+b->h:request jsbundle
+b<--h:jsbundle
+b->h:request download assets and style
+b<--h:asset and style
+b->b:JS DOM manipulation to do render Full page
 activate b
 end
 
@@ -35,5 +39,4 @@ end
 
 deactivate b
 deactivate b
-
 @enduml

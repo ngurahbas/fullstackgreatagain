@@ -21,6 +21,7 @@
 ### AJAX (at least the promise of it)
 ![](earlyajax.svg)
 ### Backend and Frontend Compartmentalization
+![](compartmentalizedbefe.svg)
 ## Fullstack Approaches
 - Compartmentalized Backend and Frontend approaches
 - Meta-frameworks Approaches
