@@ -1,0 +1,34 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+title Pre-AJAX Web Interaction
+skinparam ParticipantPadding 200
+
+actor User as u
+participant Browser as b
+participant Host as h
+
+group 1. Enter Url
+u->b:enter url
+b->h:HTTP request
+b<--h:Full HTML
+b->b:render Full HTML
+activate b
+end
+group 2. User Navigation
+u->b:click link
+b->h
+b<--h:Full HTML
+deactivate b
+b->b:render Full HTML
+activate b
+end
+group 3. User Input
+u->b:form submit
+b->h
+b<--h: Updated HTML/Redirect
+deactivate b
+b->b:render Full HTML
+activate b
+end
+deactivate b
+@enduml

@@ -15,6 +15,8 @@
 - JQuery AJAX Programming Unification
 - Backend and Frontend Compartmentalization
 - Fullstack Renaissance
+### Pre-AJAX
+![BeforaAjax](beforeajax.svg)
 ## Decadence of JavaScript Request
 - The original promise of AJAX
 - Backend and Frontend Compartmentalization 
