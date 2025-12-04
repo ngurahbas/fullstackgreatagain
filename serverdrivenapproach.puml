@@ -1,0 +1,12 @@
+@startuml
+title Server-driven UI Approach
+package Backend {
+    component "Templating Engine"
+}
+
+package Frontend {
+    component "Hypermedia library"
+}
+
+Backend --> Frontend : "<ul><li>Item 1</li>\n<li>Item 2</li></ul>"
+@enduml

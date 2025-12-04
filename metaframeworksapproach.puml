@@ -1,0 +1,19 @@
+@startuml
+title Meta-Frameworks Approach
+package Backend {
+    component "Rendering Logic" {
+        portout " " as fport1
+    }
+}
+
+
+package Frontend {
+    component "Rendering Logic + Full DOM engine" {
+        port " " as bport1
+    }
+}
+
+fport1 --- bport1
+
+
+@enduml

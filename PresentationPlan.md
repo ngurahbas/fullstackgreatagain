@@ -23,9 +23,9 @@
 ### Backend and Frontend Compartmentalization
 ![](compartmentalizedbefe.svg)
 ## Fullstack Approaches
-- Compartmentalized Backend and Frontend approaches
-- Meta-frameworks Approaches
-- Server-driven UI Approaches
+### Compartmentalized Backend and Frontend approach
+### Meta-frameworks Approach
+### Server-driven UI Approach
 ## Compartmentalized Approaches
 Client Only JavaScript frameworks or libraries and API-sytle backend endpoints.
 Problems:

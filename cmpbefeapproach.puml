@@ -1,0 +1,22 @@
+@startuml
+title Compartmentalized Backend and Frontend
+
+package Backend {
+    component "Endpoints Controller"
+}
+Backend -- api1
+Backend -- api2
+Backend -- api3
+
+package Frontend {
+    component "Component Processor"
+}
+
+Frontend --up-( api1
+Frontend --up-( api1
+Frontend --up-( api1
+Frontend --up-( api2
+Frontend --up-( api2
+Frontend --up-( api3
+
+@enduml
